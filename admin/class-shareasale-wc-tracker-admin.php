@@ -237,6 +237,7 @@ class ShareASale_WC_Tracker_Admin {
 		require_once plugin_dir_path( __FILE__ ) . 'templates/shareasale-wc-tracker-woocommerce-product-category-subcategory-out-link.php';
 	}
 
+	/*** The below function is perfectly fine, but it has since changed in the live plugin and is causing fatal errors */
 	public function woocommerce_process_product_meta( $post_id ) {
 		//woocommerce_save_data nonce already safely checked by now
 		if ( ! empty( $_POST['shareasale_wc_tracker_datafeed_product_category'] ) ) {
